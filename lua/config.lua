@@ -1,0 +1,36 @@
+return {
+  hmac_secret = "local-test-secret-do-not-use-in-prod",
+  cookie_ttl_secs = 3600,
+  -- PKCS8 PEM, matches the public key baked into templates/fingerprint.js. Local test keypair
+  -- only — rotate before any real deployment, same as hmac_secret.
+  rsa_private_key = [[
+-----BEGIN PRIVATE KEY-----
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCwzEWPqfx9ZAOo
+DF8Pv/qCFUCzHxV2KgLe9+WHwbVggweTCNWJLYFKoaElo8wdMddqtKNU/R6URulH
+v+heL9wPu963blgk31PaqMsb2RPH6yDKenCJoZbg88GXoIjTAplFxTbcuQRC1Mr/
+w5gd155ocYF6fCk+NCdL/FW/H9UdMWGwBmn+qT1SjA4KDlMEbACUXYzCzEg2DBi+
+rt2ZIan23zJTnbPd0j+F6MhauLRzuoWgW1UJsa46t3J8InkdZAr/oljV49oQSbhV
+owr6D85ED/lRdWrau122WPBMY2CjiEoGkowQg4JnPw+iAi4+ApzALFf5NZFYAj/0
+/9G2ZLChAgMBAAECggEAMxuJzELmY1UDHZQd8s6bWvlLz7vfl14DoHLm3jyn8vNN
+wDpgiBwocOuSSvAztAjRbd40DQBy04hALWaThI6vPbkgY8Q5JMeOVPpQZId3CWa1
+/vIwEAkvNW4he3SDuQPaTOn6twmg6rTazd673XyUJTsSo9a6kWnAJl4WZ36LO7ms
+POZMkZNybrdBXgR5+DkwBRvWl28v1hvgQVXF6d7fxjhqOAnK2XWbdT2HMnQgybv2
+FV3HQbfZvMqKnvitv2Uu3TAXvtcCbsQJ3WbMkr8FQ6LsOKsymCpVnWqfbWSEkHQx
+AobjqTxqnDWvB8sg0/ax6NEdxSymHcHE3VjhgB4YAQKBgQDoIcD4XGZRk8EpMsA9
+5HPJ/C4m74vVtIluEHMjlTngCAMuecMvI/xwaHNOPYZmDMUi70K3J1yDbVwnEYRh
+mnaeEvOR2VY249F4T3dEnu3lCBD7bwtUXpxtNMKNnnHQzkucDMFdMY94bLn5SI5j
+/foS0DFHknj0v3s7hjHI+DtQYQKBgQDC+gBmkYu9wk9iw1y7BozFCttPyDpxpo2K
+I5CHk6hPepDS6j6VDzrb34seXMUUOz99/ylWUEjulJld6JfkrN9CtJ5jHUVk79Fi
+sScq1G3JCbnVzCc1nQn77Ym54JqUnes+xPFhrWaaQoMZAUd1rBoGrkENbLCz96wu
+wNukwvpIQQKBgHk8R8Bu4bFxbczKiMTKb/7qCmCjc3DlnXEyfi/zXAq5pI+9YEda
+kBlVNAOE9pCN0tfwBfQKRrMNhreQ2obvWUwtsbBWxkRcr6YaOrxIFQ8tK1FmKZCi
+6SfQClxUiDT5yVty/fpiTAAlKOwdDOEEYHs66MHsqeeJqh7oc0/29WOBAoGAC8jC
+Z3CaipCI7cYy/5bIwUwDr1HBvoa7fULjBF63SH527Fh+CdJO02UyalZfDvb5wmq+
+m9nkXo8aqeNZ8tdD8yspe4IUZKJd/GIKpPsL25+73KEnKYVhShm0PkjF7v+QbU3H
+7Qhm8CHe/I7oO8N4GzlC80XDdE0e2gCMBexG5kECgYBSfgGSeS4BIPdWRjZJzUMT
+p8JRT+p/ksF4lxn92PLQr+ePb2VOyPrExDlin5C1kiGhKgcsDxwpKniTf0A8A6ep
+jSenFFv1u61oXpPbpKuRA7AEap64iTUbXBOxdQjIuul7hQvIVBSEKbSnnt4a5Yxm
+QhpGa4xep3MEFBHybjbbNg==
+-----END PRIVATE KEY-----
+]],
+}
